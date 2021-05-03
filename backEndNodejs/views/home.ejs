@@ -1,0 +1,17 @@
+
+        <%- include('includes/head') %>
+        <div id="my">index.css</div>
+        <h5>hello Home</h5>
+        my name is <%= name %> dept: <%= dept%>
+        stuyding at <%=school %>
+        <p> our first ejs app</p>
+
+        <ul>
+            <% students.forEach(student=>{%>
+                <li>
+                    <%= student %>
+                </li>
+           <%})%>
+        </ul>
+        <%- include('includes/footer') %>
+    

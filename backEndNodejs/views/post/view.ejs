@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>first ejs</title>
+        <link rel="stylesheet"  href="css/index.css">
+    </head>
+    <body>
+
+       <strong> <%= post.title%></strong>
+       <%= post.body%>
+       <a href="/posts/<%=post.id%>/edit">edit post</a>
+       <a href="/posts">go home</a>
+    </body>
+    </html>

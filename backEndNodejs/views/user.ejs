@@ -1,0 +1,13 @@
+        <%- include('includes/head') %>
+        <p>Dear <%= username.toUpperCase() %>, we welcome you to our app </p>
+
+        <% if(username == 'taiwo') {%>
+            username is <%= username %>
+
+        <%} else {%>
+         you are not allow to visit this page
+         <%}%>
+
+         <%= username == 'taiwo' ? `username is ${username}` : `leave here` %>
+        
+         <%- include('includes/footer') %>

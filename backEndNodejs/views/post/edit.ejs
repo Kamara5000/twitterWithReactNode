@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>first ejs</title>
+        <link rel="stylesheet"  href="css/index.css">
+    </head>
+    <body>
+
+       
+       <form method="POST" action="/posts/<%= post.id%>?_method=PUT">
+          Title <input name="title" value=" <%= post.title %>" >
+           Body: <textarea name="body"><%= post.body %></textarea>
+           <input type="submit" value="save edit">
+       </form>
+
+       
+    </body>
+    </html>

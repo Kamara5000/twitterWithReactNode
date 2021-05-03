@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>first ejs</title>
+        <link rel="stylesheet"  href="css/index.css">
+    </head>
+    <body>
+
+        <input  id="firstname">
+        <button onclick="submitInput()">subnit</button>
+        <script src="/socket.io/socket.io.js">//if framework as front end we can use the cdn</script>
+        
+        <script>
+            const socket = io();
+            const submitInput = ()=>{
+                let fName = firstname.value;
+                socket.emit('name', fName);
+            }
+             
+          socket.on('message', msg=>{
+                console.log(msg)
+            })  
+
+            // socket.on('anything', msg=>{
+            //     console.log(msg)
+            // })
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>first ejs</title>
+        <link rel="stylesheet"  href="css/index.css">
+    </head>
+    <body>
+
+        here are your posts
+        <br>
+
+        <% posts.forEach(post=>{%>
+            <a href="/posts/ <%= post.id %> "> <%= post.id %>
+            <h1><%= post.title %></h1>
+            <div> <%= post.body %></div> 
+            </a>
+                <form method="POST" action="/posts/ <%= post.id %>?_method=DELETE ">
+                    <input type="submit" value="delete"/>
+                </form>
+        <%})%>
+
+        <button><a href="/posts/new">create post</a></button>
+    </body>
+    </html>
