@@ -67,7 +67,7 @@ items shipped from OptimoStore.com</div>
             <div className="row no-gutters">
             <div className="col-md-4">
             <img src={`http://localhost/react/optimobackend/uploads/${goods.product_image_name}`} className="card-img" alt="..."/>
-            </div>
+        </div>
     <div className="col-md-8">
         <div className="card-body">
 <h5 className="card-title  ">{goods.product_name}</h5>

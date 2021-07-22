@@ -17,7 +17,7 @@ const myJwtMdw = (req, res, next)=>{
          //    res.statusCode
             res.json({error: "something is wrong"})
         } else{
-           
+        req.body=user;   
         next();
         }
      })

@@ -45,7 +45,7 @@ const UserLog=(props)=>{
             let {token, message} = response.data;
             console.log(message, token);
             localStorage.setItem('token', token); 
-            props.history.push('/profile');
+            props.history.push('/userhomepage');
             //handleCheck(response.data);
              //handleMyLog(response.data);
              //handleCheck(response.data);

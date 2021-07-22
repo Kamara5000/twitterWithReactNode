@@ -9,8 +9,11 @@ const uri = 'mongodb+srv://first_database:first_database@cluster0.sby1m.mongodb.
 mongoose.connect(uri,{useNewUrlParser:true, useUnifiedTopology: true });
 
 
-router.get('/', myJwtMdw, async(req, resp)=>{
-    myUser.find({}).then(res=>{
+router.post('/', myJwtMdw, async(req, resp)=>{
+    
+     //console.log(req.body)
+    let {username} = req.body;
+    myUser.find({username:username}).then(res=>{
         console.log(res);
         resp.json(res);
     });

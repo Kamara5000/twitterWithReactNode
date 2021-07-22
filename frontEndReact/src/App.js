@@ -13,8 +13,9 @@ import UserReg from './interface/users/userReg';
 import UserCart from './interface/users/userCart';
 import UserCheckOut from './interface/users/userCheckOut';
 import UserLog from './interface/users/userLog';
-import UserProfile from './interface/users/userProfile';
+import UserProfile from './interface/users/profile/userProfile';
 import UserHomePage from './interface/users/userhomepage';
+//import UserTweets from './interface/users/tweets';
 
 
 //import SecondReduxFunction from './interface/secondReduxFunction'
@@ -45,6 +46,7 @@ class App extends Component {
         <Route path="/profile" component={UserProfile} />
         <Route path="/reduxFunction" component={UserHome} />
         <Route path="/userhomepage" component={UserHomePage}/>
+        {/* <Route path="/tweets" component={UserTweets}/> */}
        
         
         
